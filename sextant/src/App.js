@@ -2,6 +2,7 @@ import Exhibit from './Exhibit';
 import './App.css';
 import Banner from './Banner';
 import IPAddressDisplay from './IPAddressDisplay';
+import PacketLatencyDisplay from './PacketLatencyDisplay';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <IPAddressDisplay ipAddressType={false} /> {/* Request IPv4 address */}
       <IPAddressDisplay ipAddressType={true} /> {/* Request IPv6 address */}
       </Exhibit>
-      
+      <PacketLatencyDisplay />
     </div>
   );
 }
