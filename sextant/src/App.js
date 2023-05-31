@@ -1,6 +1,7 @@
 import Exhibit from './Exhibit';
 import './App.css';
 import Banner from './Banner';
+import IPAddressDisplay from './IPAddressDisplay';
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
 
       <Exhibit heading="Exhibit Heading ">
         {/* Child components */}
-        <p>This is the content of the exhibit.</p>
-        <img src="example.jpg" alt="Example" />
+        <IPAddressDisplay ipAddressType={false} /> {/* Request IPv4 address */}
+      <IPAddressDisplay ipAddressType={true} /> {/* Request IPv6 address */}
       </Exhibit>
       
     </div>
